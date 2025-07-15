@@ -499,12 +499,23 @@ h2::after {
     flex-direction: column;
     align-items: center;
     z-index: 2;
+    pointer-events: none;
+    /* Add extra margin to separate from buttons if needed */
 }
+
+@media (max-width: 700px) {
+    .scroll-indicator {
+        bottom: 1.2rem !important;
+    }
+}
+
 .scroll-label {
     color: var(--secondary-text-color);
     font-size: 1.1rem;
     text-align: center;
+    margin-bottom: 0.2rem;
 }
+
 .arrow-bounce {
     font-size: 2rem;
     color: var(--primary-color);
@@ -513,14 +524,10 @@ h2::after {
     display: flex;
     justify-content: center;
 }
+
 @keyframes bounce {
     0% { transform: translateY(0); }
     100% { transform: translateY(18px); }
-}
-@media (max-width: 700px) {
-    .scroll-indicator {
-        bottom: 1.2rem !important;
-    }
 }
 
 /* Typewriter effect for tagline */
