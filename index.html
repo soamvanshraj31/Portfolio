@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Vansh Raj Soam, a software engineer specializing in full-stack development, real-time apps, and AI-powered tools.">
+    <meta name="keywords" content="Vansh Raj Soam, portfolio, software engineer, full-stack, AI, projects, web development, Node.js, Python, React, Flask, JavaScript, Machine Learning">
+    <title>Vansh Raj Soam - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav role="navigation" aria-label="Main navigation">
+            <div class="logo">Vansh Raj Soam</div>
+            <button id="hamburger-btn" aria-label="Open navigation menu" aria-controls="mobile-nav" aria-expanded="false" style="display:none;background:none;border:none;cursor:pointer;font-size:2rem;color:#fff;margin-left:auto;">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="desktop-nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div id="mobile-nav" class="mobile-nav" role="menu" aria-label="Mobile navigation" aria-hidden="true" style="display:none;">
+                <a href="#about" role="menuitem">About</a>
+                <a href="#projects" role="menuitem">Projects</a>
+                <a href="#skills" role="menuitem">Skills</a>
+                <a href="#contact" role="menuitem">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+
+    <main role="main">
+        <section id="hero">
+            <div class="hero-bg-svg" aria-hidden="true">
+                <svg viewBox="0 0 1440 320" width="100%" height="100%" style="position:absolute;top:0;left:0;width:100vw;height:100%;z-index:0;">
+                    <defs>
+                        <linearGradient id="hero-gradient" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0%" stop-color="#1DB954"/>
+                            <stop offset="100%" stop-color="#121212"/>
+                        </linearGradient>
+                    </defs>
+                    <path fill="url(#hero-gradient)" fill-opacity="0.2" d="M0,160L60,170.7C120,181,240,203,360,197.3C480,192,600,160,720,133.3C840,107,960,85,1080,101.3C1200,117,1320,171,1380,197.3L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+                </svg>
+            </div>
+            <div class="hero-content" style="position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;">
+                <img src="assets/image.jpg" alt="Vansh Raj Soam profile photo" class="hero-profile-pic" style="width:140px;height:140px;border-radius:50%;object-fit:cover;border:5px solid #1DB954;box-shadow:0 4px 24px rgba(0,0,0,0.18);margin-bottom:1.5rem;">
+                <h1 style="font-size:4rem;font-weight:700;margin-bottom:1rem;">Vansh Raj Soam</h1>
+                <p style="font-size:1.5rem;color:var(--secondary-text-color);margin-bottom:1rem;min-height:2.2em;">
+                    <span id="hero-animated-tagline">Software Engineer</span>
+                </p>
+                <div class="hero-socials" style="display:flex;gap:1.2rem;margin-bottom:2rem;">
+                    <a href="mailto:vanshrajsoam1@gmail.com" aria-label="Email" target="_blank" rel="noopener" style="color:#fff;font-size:1.7rem;"><i class="fas fa-envelope"></i></a>
+                    <a href="https://linkedin.com/in/vanshraj-soam" aria-label="LinkedIn" target="_blank" rel="noopener" style="color:#0A66C2;font-size:1.7rem;"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/soamvanshraj31" aria-label="GitHub" target="_blank" rel="noopener" style="color:#fff;font-size:1.7rem;"><i class="fab fa-github"></i></a>
+                </div>
+                <div style="display:flex;gap:1rem;justify-content:center;">
+                    <a href="#projects" class="btn">View My Work</a>
+                    <a href="assets/Vansh_Raj_Soam_resume.pdf" class="btn" style="background:#222;color:#fff;border:1.5px solid #1DB954;" download>Download Resume</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span style="display:block;text-align:center;color:var(--secondary-text-color);font-size:1.1rem;">Scroll Down</span>
+                <span class="arrow-bounce"><i class="fas fa-chevron-down"></i></span>
+            </div>
+        </section>
+
+        <section id="about" class="container">
+            <div class="about-content">
+                <img src="assets/image.jpg" alt="Vansh Raj Soam profile photo" class="profile-pic" data-aos="fade-right">
+                <div class="about-text" data-aos="fade-left">
+                    <h2>About Me</h2>
+                    <p>
+                        Computer Science undergraduate with a strong foundation in full-stack development, data structures, and system design. Experienced in building real-time applications and AI-powered tools. Focused on writing clean code, understanding systems, collaborating in teams, and building practical solutions through hands-on projects and competitive programming.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="education" class="container">
+            <h2 data-aos="fade-up">Education</h2>
+            <div class="education-grid">
+                <div class="education-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Graphic Era Hill University Dehradun</h3>
+                    <p>B.Tech in Computer Science, GPA: 7.8/10</p>
+                    <p>Aug 2022 – Aug 2026</p>
+                </div>
+                <div class="education-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Mahaveer International School Meerut</h3>
+                    <p>Class 12 (CBSE), Score: 84.16%</p>
+                    <p>Aug 2021 – Aug 2022</p>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="container">
+            <h2 data-aos="fade-up">Key Projects</h2>
+            <div class="projects-sort-bar" style="display:flex;justify-content:flex-end;align-items:center;margin-bottom:1.5rem;">
+                <label for="project-sort" style="margin-right:0.5rem;color:var(--secondary-text-color);font-size:1rem;">Sort by:</label>
+                <select id="project-sort" aria-label="Sort projects" tabindex="0" style="padding:0.4rem 1rem;border-radius:6px;border:1px solid #282828;background:var(--surface-color);color:var(--text-color);">
+                    <option value="featured">Featured</option>
+                    <option value="recent">Most Recent</option>
+                    <option value="az">Alphabetical (A-Z)</option>
+                    <option value="tech">Technology</option>
+                </select>
+            </div>
+            <div class="project-grid">
+                <!-- PINNED PROJECTS -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="10" data-title="Real-Time Chat App" data-date="2023-12-01" data-tech="Node.js">
+                    <div class="project-image">
+                        <img src="assets/photos/real_time_chat.png" alt="Real-Time Chat App cover photo">
+                    </div>
+                    <button class="details-toggle-btn" aria-expanded="false" aria-controls="details-real-time-chat-app">More Details</button>
+                    <div class="project-details" id="details-real-time-chat-app" hidden>
+                        <p>This real-time chat application is designed for scalability and low-latency messaging, supporting over 1,000 concurrent users. Built with Node.js, Socket.io, Redis, and JWT, it features robust authentication, efficient message delivery, and a modern UI. The project was featured in a college newsletter for its backend design.</p>
+                    </div>
+                    <div class="project-card-content">
+                        <h3>Real-Time Chat App</h3>
+                        <div class="tech-stack">
+                            <span class="tech-chip">Node.js</span>
+                            <span class="tech-chip">Socket.io</span>
+                            <span class="tech-chip">Redis</span>
+                            <span class="tech-chip">JWT</span>
+                        </div>
+                        <a href="https://github.com/soamvanshraj31/real-time-chat-application" target="_blank" rel="noopener" class="btn">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="20" data-title="Crop Recommendation System" data-date="2023-10-15" data-tech="Python">
+                    <div class="project-image">
+                        <img src="assets/photos/crop_recommendation_system.png" alt="Crop Recommendation System cover photo">
+                    </div>
+                    <button class="details-toggle-btn" aria-expanded="false" aria-controls="details-crop-recommendation-system">More Details</button>
+                    <div class="project-details" id="details-crop-recommendation-system" hidden>
+                        <p>This web app uses a Random Forest model to recommend crops based on soil and climate data. It features a responsive UI, real-time input validation, and interactive sliders. The app displays predictions with confidence scores and optimal conditions, and provides crop-specific care information in a modal view.</p>
+                    </div>
+                    <div class="project-card-content">
+                        <h3>Crop Recommendation System</h3>
+                        <div class="tech-stack">
+                            <span class="tech-chip">Flask</span>
+                            <span class="tech-chip">Python</span>
+                            <span class="tech-chip">Machine Learning</span>
+                        </div>
+                        <a href="https://github.com/soamvanshraj31/Crop-Recommendation-System" target="_blank" rel="noopener" class="btn">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="30" data-title="Compile Chandra – AI-Powered Online IDE" data-date="2023-11-10" data-tech="Flask">
+                    <div class="project-image">
+                        <img src="assets/photos/compile_chandra.png" alt="Compile Chandra cover photo">
+                    </div>
+                    <button class="details-toggle-btn" aria-expanded="false" aria-controls="details-compile-chandra">More Details</button>
+                    <div class="project-details" id="details-compile-chandra" hidden>
+                        <p>Compile Chandra is a browser-based code editor supporting multiple languages, real-time compilation, and output preview. It integrates a GenAI assistant for debugging and suggestions, offers syntax highlighting, secure sandbox execution, and supports 100+ daily code submissions.</p>
+                    </div>
+                    <div class="project-card-content">
+                        <h3>Compile Chandra – AI-Powered Online IDE</h3>
+                        <div class="tech-stack">
+                            <span class="tech-chip">Flask</span>
+                            <span class="tech-chip">JavaScript</span>
+                            <span class="tech-chip">GenAI</span>
+                        </div>
+                        <a href="https://github.com/soamvanshraj31/CompileChandra-A-next-gen-Compiler" target="_blank" rel="noopener" class="btn">View on GitHub</a>
+                    </div>
+                </div>
+                <!-- END PINNED PROJECTS -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="110" data-title="VibeFinder – Interactive City Vibe Discovery Platform" data-date="2023-09-01" data-tech="JavaScript">
+                    <div class="project-image">
+                        <img src="assets/photos/vibemap.png" alt="VibeFinder cover photo">
+                    </div>
+                    <button class="details-toggle-btn" aria-expanded="false" aria-controls="details-vibefinder">More Details</button>
+                    <div class="project-details" id="details-vibefinder" hidden>
+                        <p>VibeFinder is an interactive web app for discovering and sharing the unique vibes of city locations. It features an interactive map, real-time data visualization, smart search, user-contributed vibes, and a responsive, dark-themed UI. Built with JavaScript, Leaflet.js, and Tailwind CSS.</p>
+                    </div>
+                    <div class="project-card-content">
+                        <h3>VibeFinder – Interactive City Vibe Discovery Platform</h3>
+                        <div class="tech-stack">
+                            <span class="tech-chip">HTML5</span>
+                            <span class="tech-chip">CSS3</span>
+                            <span class="tech-chip">Tailwind CSS</span>
+                            <span class="tech-chip">JavaScript</span>
+                            <span class="tech-chip">Leaflet.js</span>
+                            <span class="tech-chip">Font Awesome</span>
+                        </div>
+                        <a href="https://github.com/soamvanshraj31/Vibemap" target="_blank" rel="noopener" class="btn">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="90" data-title="Machine Translator using Machine Learning" data-date="2023-08-10" data-tech="Python">
+                    <div class="project-image">
+                        <img src="assets/photos/machine_translator.png" alt="Machine Translator cover photo">
+                    </div>
+                    <button class="details-toggle-btn" aria-expanded="false" aria-controls="details-machine-translator">More Details</button>
+                    <div class="project-details" id="details-machine-translator" hidden>
+                        <p>This web-based machine translation app leverages transformer models to translate text between English, Hindi, and French. Built with Flask and Hugging Face Transformers, it supports custom model training and is easily extendable to more languages.</p>
+                    </div>
+                    <div class="project-card-content">
+                        <h3>Machine Translator using Machine Learning</h3>
+                        <div class="tech-stack">
+                            <span class="tech-chip">Flask</span>
+                            <span class="tech-chip">Python</span>
+                            <span class="tech-chip">Hugging Face Transformers</span>
+                            <span class="tech-chip">Torch</span>
+                            <span class="tech-chip">HTML</span>
+                        </div>
+                        <a href="https://github.com/soamvanshraj31/Machine-Translator" target="_blank" rel="noopener" class="btn">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="75" data-title="OS Process Scheduling & Page Replacement Algorithms Visualizer" data-date="2023-07-15" data-tech="JavaScript">
+                    <div class="project-image">
+                        <img src="assets/photos/os_process_schduler.png" alt="OS Process Scheduling & Page Replacement Algorithms Visualizer cover photo">
+                    </div>
+                    <button class="details-toggle-btn" aria-expanded="false" aria-controls="details-os-visualizer">More Details</button>
+                    <div class="project-details" id="details-os-visualizer" hidden>
+                        <p>This interactive web app visualizes classic CPU scheduling and page replacement algorithms with Gantt charts, animations, and metrics. It includes a learning section, sample data, and works offline. Built with JavaScript, Google Charts, and HTML5.</p>
+                    </div>
+                    <div class="project-card-content">
+                        <h3>OS Process Scheduling & Page Replacement Algorithms Visualizer</h3>
+                        <div class="tech-stack">
+                            <span class="tech-chip">HTML5</span>
+                            <span class="tech-chip">CSS3</span>
+                            <span class="tech-chip">JavaScript</span>
+                            <span class="tech-chip">Google Charts</span>
+                            <span class="tech-chip">FontAwesome</span>
+                        </div>
+                        <a href="https://github.com/soamvanshraj31/Os-Algorithm-Visualiser/tree/main/OS-Process-Scheduling-Algorithms" target="_blank" rel="noopener" class="btn">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="50" data-title="Indian Languages Speech Recognition & Synthesis" data-date="2023-06-20" data-tech="Python">
+                    <div class="project-image">
+                        <img src="assets/photos/text_to_speech.png" alt="Indian Languages Speech Recognition & Synthesis cover photo">
+                    </div>
+                    <button class="details-toggle-btn" aria-expanded="false" aria-controls="details-speech-recognition">More Details</button>
+                    <div class="project-details" id="details-speech-recognition" hidden>
+                        <p>A comprehensive speech recognition and text-to-speech system supporting 24 Indian languages. Features a modern web interface, real-time recognition, and a robust Python backend with batch processing and audio format conversion.</p>
+                    </div>
+                    <div class="project-card-content">
+                        <h3>Indian Languages Speech Recognition & Synthesis</h3>
+                        <div class="tech-stack">
+                            <span class="tech-chip">Python</span>
+                            <span class="tech-chip">Google Speech API</span>
+                            <span class="tech-chip">Web</span>
+                            <span class="tech-chip">Unicode</span>
+                        </div>
+                        <a href="https://github.com/soamvanshraj31/speech-to-text" target="_blank" rel="noopener" class="btn">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100" data-title="MediBridge – Medical Device Monitoring System" data-date="2023-05-05" data-tech="React.js">
+                    <div class="project-image">
+                        <img src="assets/photos/medi_bridge.png" alt="MediBridge cover photo">
+                    </div>
+                    <button class="details-toggle-btn" aria-expanded="false" aria-controls="details-medibridge">More Details</button>
+                    <div class="project-details" id="details-medibridge" hidden>
+                        <p>MediBridge is a responsive web app for real-time health monitoring of 50+ medical devices. It features WebSocket-based live updates, user-specific dashboards, and an early-warning system with predictive alerts. Built with React.js and MySQL.</p>
+                    </div>
+                    <div class="project-card-content">
+                        <h3>MediBridge – Medical Device Monitoring System</h3>
+                        <div class="tech-stack">
+                            <span class="tech-chip">React.js</span>
+                            <span class="tech-chip">MySQL</span>
+                            <span class="tech-chip">WebSocket</span>
+                        </div>
+                        <a href="https://github.com/soamvanshraj31/Medical-equipment-management-system" target="_blank" rel="noopener" class="btn">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="container">
+            <h2 data-aos="fade-up">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h4><i class="fas fa-code"></i> Languages</h4>
+                    <p>C, C++, Python, Java, JavaScript, SQL</p>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h4><i class="fas fa-server"></i> Web</h4>
+                    <p>React.js, Node.js, MongoDB</p>
+                </div>
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <h4><i class="fas fa-tools"></i> Tools</h4>
+                    <p>Git, Docker, Kubernetes, TensorFlow, Pandas, NumPy</p>
+                </div>
+            </div>
+        </section>
+        <section id="certifications" class="container">
+            <h2 data-aos="fade-up">Certifications</h2>
+            <div class="certifications-grid">
+                <div class="certification-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-award"></i>
+                    <h3>AWS Machine Learning Foundations</h3>
+                    <p>AWS Skill Builder</p>
+                </div>
+                <div class="certification-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-award"></i>
+                    <h3>DevOps Essentials with AWS</h3>
+                    <p>AWS Skill Builder</p>
+                </div>
+                <div class="certification-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-award"></i>
+                    <h3>Generative AI with Amazon Q</h3>
+                    <p>AWS Skill Builder</p>
+                </div>
+                <div class="certification-card" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-award"></i>
+                    <h3>Advanced Testing with AWS DevOps Tools</h3>
+                    <p>AWS Skill Builder</p>
+                </div>
+            </div>
+        </section>
+        <section id="achievements" class="container">
+            <h2 data-aos="fade-up">Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-trophy"></i>
+                    <h3>LeetCode Global Top 1%</h3>
+                    <p>Solved 500+ problems and ranked among top 2,000 in contest.</p>
+                </div>
+                <div class="achievement-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Hackathon Finalist</h3>
+                    <p>Secured 2nd place in a 36-hour hackathon by building a Map based Application.</p>
+                </div>
+                <div class="achievement-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Project Spotlight</h3>
+                    <p>Real-Time Chat App featured in college newsletter for demonstrating scalable backend design.</p>
+                </div>
+                <div class="achievement-card" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-trophy"></i>
+                    <h3>100-Day Coding Streak</h3>
+                    <p>Completed 100+ continuous days of problem-solving on LeetCode.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="container" data-aos="fade-in">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:vanshrajsoam1@gmail.com">vanshrajsoam1@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/vanshraj-soam" target="_blank" rel="noopener">linkedin.com/in/vanshraj-soam</a></p>
+            <p>GitHub: <a href="https://github.com/soamvanshraj31" target="_blank" rel="noopener">github.com/soamvanshraj31</a></p>
+            <p>Phone: +91 93687 78001</p>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2025 Vansh Raj Soam. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
